@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightgreen;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.tech.cis3368.finalproject.OwnerController">
+   <children>
+      <Label layoutX="222.0" layoutY="14.0" text="Owner Page">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="employeePageButton" layoutX="43.0" layoutY="336.0" mnemonicParsing="false" onAction="#employeePageButton" prefHeight="29.0" prefWidth="110.0" text="Employee page" />
+      <Button fx:id="reportButton" layoutX="483.0" layoutY="336.0" mnemonicParsing="false" onAction="#reportButton" prefHeight="29.0" prefWidth="85.0" text="Sales report" />
+      <Button fx:id="homeButton" layoutX="43.0" layoutY="36.0" mnemonicParsing="false" onAction="#homeButton" prefHeight="30.0" prefWidth="100.0" text="Home" />
+      <TextField fx:id="t2" layoutX="437.0" layoutY="296.0" promptText="Ending Date of Report" />
+      <TextField fx:id="t1" layoutX="437.0" layoutY="256.0" promptText="Beginning Date of Report" />
+      <ScrollPane layoutX="105.0" layoutY="80.0">
+         <content>
+            <GridPane fx:id="gridPane1" prefHeight="241.0" prefWidth="254.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+      <Label layoutX="469.0" layoutY="94.0" text="Profitability" />
+      <TextField fx:id="profitability" layoutX="425.0" layoutY="122.0" />
+   </children>
+</AnchorPane>

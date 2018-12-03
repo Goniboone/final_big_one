@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightgreen;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.tech.cis3368.finalproject.MainController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="208.0" layoutY="29.0" text="Home Page" textFill="#e40707">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Button fx:id="customerButton" layoutX="22.0" layoutY="290.0" mnemonicParsing="false" onAction="#customerButton" prefHeight="41.0" prefWidth="123.0" text="Customer" />
+      <Button fx:id="ownerButton" layoutX="460.0" layoutY="290.0" mnemonicParsing="false" onAction="#ownerButton" prefHeight="41.0" prefWidth="123.0" text="Owner" />
+      <Button fx:id="managerButton" layoutX="460.0" layoutY="341.0" mnemonicParsing="false" onAction="#managerButton" prefHeight="41.0" prefWidth="123.0" text="Manager" />
+      <Button fx:id="workmanButton" layoutX="460.0" layoutY="239.0" mnemonicParsing="false" onAction="#workmanButton" prefHeight="41.0" prefWidth="123.0" text="Workman" />
+      <Button fx:id="kanbanButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#kanbanButton" prefHeight="30.0" prefWidth="100.0" text="Kanban Board" />
+   </children>
+</AnchorPane>
